@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" width="600" height="720">
+  <defs>
+    <radialGradient id="bgGlow" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#2a2320"/>
+      <stop offset="55%" stop-color="#15130f"/>
+      <stop offset="100%" stop-color="#0d0d0f"/>
+    </radialGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a2c22"/>
+      <stop offset="50%" stop-color="#5b4433"/>
+      <stop offset="100%" stop-color="#2b201a"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22262b"/>
+      <stop offset="100%" stop-color="#14171a"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="720" fill="url(#bgGlow)"/>
+
+  <!-- ambient glow blobs -->
+  <ellipse cx="120" cy="620" rx="220" ry="180" fill="#ff7a1a" opacity="0.20" filter="url(#soft2)"/>
+  <ellipse cx="500" cy="120" rx="200" ry="160" fill="#2fb8ff" opacity="0.16" filter="url(#soft2)"/>
+
+  <!-- shoulders / shirt -->
+  <path d="M 90 720 C 100 560 190 470 300 470 C 410 470 500 560 510 720 Z" fill="url(#shirtGrad)"/>
+  <path d="M 90 720 C 100 560 190 470 300 470 C 410 470 500 560 510 720 Z" fill="none" stroke="#2fb8ff" stroke-opacity="0.35" stroke-width="2"/>
+
+  <!-- neck -->
+  <path d="M 260 460 L 260 400 L 340 400 L 340 460 C 320 480 280 480 260 460 Z" fill="url(#skinGrad)"/>
+
+  <!-- head -->
+  <ellipse cx="300" cy="300" rx="115" ry="135" fill="url(#skinGrad)"/>
+
+  <!-- hair -->
+  <path d="M 185 280 C 175 190 230 130 300 130 C 375 130 425 190 415 280 C 415 240 400 210 370 195 C 355 220 330 205 320 190 C 300 215 260 215 245 190 C 225 210 200 235 195 270 Z" fill="#1a1310"/>
+
+  <!-- ear accents -->
+  <ellipse cx="188" cy="305" rx="14" ry="24" fill="url(#skinGrad)"/>
+  <ellipse cx="412" cy="305" rx="14" ry="24" fill="url(#skinGrad)"/>
+
+  <!-- subtle facial structure lines (cinematic, not literal features) -->
+  <path d="M 240 330 Q 300 360 360 330" stroke="#1a120c" stroke-opacity="0.35" stroke-width="4" fill="none"/>
+  <path d="M 255 270 Q 265 260 280 268" stroke="#1a120c" stroke-opacity="0.4" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 320 268 Q 335 260 345 270" stroke="#1a120c" stroke-opacity="0.4" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- rim light: orange left, blue right -->
+  <path d="M 185 280 C 175 190 230 130 300 130" stroke="#ff8a2a" stroke-width="6" fill="none" opacity="0.55" filter="url(#soft)"/>
+  <path d="M 415 280 C 425 190 375 130 300 130" stroke="#2fb8ff" stroke-width="6" fill="none" opacity="0.5" filter="url(#soft)"/>
+  <path d="M 90 720 C 100 560 190 470 300 470" stroke="#ff8a2a" stroke-width="5" fill="none" opacity="0.35" filter="url(#soft)"/>
+  <path d="M 510 720 C 500 560 410 470 300 470" stroke="#2fb8ff" stroke-width="5" fill="none" opacity="0.3" filter="url(#soft)"/>
+
+  <!-- frame vignette -->
+  <rect x="0" y="0" width="600" height="720" fill="url(#bgGlow)" opacity="0" />
+</svg>
