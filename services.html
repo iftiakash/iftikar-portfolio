@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Iftikar, Java Web Developer</title>
+<meta name="description" content="Explore Iftikar's Java Web Development, REST API, database integration, and frontend development services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="data-store.js"></script>
+</head>
+<body>
+
+<!-- ================= ATMOSPHERE BACKGROUND ================= -->
+<div class="atmosphere" aria-hidden="true">
+  <div class="blob blob--orange"></div>
+  <div class="blob blob--blue"></div>
+  <div class="blob blob--violet"></div>
+</div>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav" data-reveal-root>
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo"><span class="nav__logo-mark">I</span> Iftikar<span class="nav__dot">.</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="services.html" class="nav__link is-active">Services</a>
+      <a href="index.html#work" class="nav__link">Work</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn--ghost nav__cta">Let's Talk <span class="arrow">↗</span></a>
+
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= SERVICES HERO ================= -->
+  <section class="services-hero">
+    <p class="eyebrow services-hero__eyebrow" data-hero-el="eyebrow">What I Do</p>
+    <h1 class="services-hero__headline" data-hero-el="headline">Building <span class="accent-text">reliable software</span> for real-world problems.</h1>
+    <p class="services-hero__lead" data-hero-el="sub">From scalable Java backends and REST APIs to responsive web interfaces and database-driven applications, I build complete digital solutions designed to perform, scale, and remain maintainable.</p>
+    <div class="services-hero__actions" data-hero-el="actions">
+      <a href="contact.html" class="btn btn--primary">Start a Project <span class="arrow">↗</span></a>
+      <a href="index.html#work" class="btn btn--outline">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ================= MAIN SERVICES ================= -->
+  <section class="main-services" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <h2 class="section-title">Services I Offer</h2>
+      <p class="section-sub">Practical development solutions built around performance, scalability, clean architecture, and real business requirements.</p>
+    </div>
+
+    <div class="service-detail-grid" id="serviceDetailGrid">
+      <!-- Rendered live from Admin Panel data by site-render.js -->
+    </div>
+  </section>
+
+  <!-- ================= DEVELOPMENT PROCESS ================= -->
+  <section class="process" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">My Process</p>
+      <h2 class="section-title">From idea to working software.</h2>
+      <p class="section-sub">A structured development process helps turn an initial idea into a reliable and maintainable product.</p>
+    </div>
+
+    <div class="process__steps">
+      <div class="process-step" data-reveal style="--i:0">
+        <div class="process-step__number">01</div>
+        <h3 class="process-step__title">Discover</h3>
+        <p class="process-step__text">Understand the requirements, goals, users, business logic, and technical challenges.</p>
+      </div>
+      <div class="process-step" data-reveal style="--i:1">
+        <div class="process-step__number">02</div>
+        <h3 class="process-step__title">Plan</h3>
+        <p class="process-step__text">Define the architecture, technologies, database structure, features, and development roadmap.</p>
+      </div>
+      <div class="process-step" data-reveal style="--i:2">
+        <div class="process-step__number">03</div>
+        <h3 class="process-step__title">Build</h3>
+        <p class="process-step__text">Develop the backend, APIs, database integrations, frontend interfaces, and core functionality.</p>
+      </div>
+      <div class="process-step" data-reveal style="--i:3">
+        <div class="process-step__number">04</div>
+        <h3 class="process-step__title">Deliver &amp; Improve</h3>
+        <p class="process-step__text">Test, refine, optimize, deploy, and continuously improve the application based on real-world feedback.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TECHNOLOGY STACK ================= -->
+  <section class="tech-stack" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">My Toolkit</p>
+      <h2 class="section-title">Built with technologies I trust.</h2>
+    </div>
+
+    <div class="tech-stack__grid">
+      <div class="tech-stack-card" data-reveal style="--i:0">
+        <span class="tech-stack-card__mark">Jv</span>
+        <div class="tech-stack-card__name">Java</div>
+        <div class="tech-stack-card__category">Backend Development</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:1">
+        <span class="tech-stack-card__mark">Sb</span>
+        <div class="tech-stack-card__name">Spring Boot</div>
+        <div class="tech-stack-card__category">Backend Framework</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:2">
+        <span class="tech-stack-card__mark">Mvc</span>
+        <div class="tech-stack-card__name">Spring MVC</div>
+        <div class="tech-stack-card__category">Backend Framework</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:3">
+        <span class="tech-stack-card__mark">Api</span>
+        <div class="tech-stack-card__name">REST API</div>
+        <div class="tech-stack-card__category">Integration Layer</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:4">
+        <span class="tech-stack-card__mark">Db</span>
+        <div class="tech-stack-card__name">MySQL</div>
+        <div class="tech-stack-card__category">Database</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:5">
+        <span class="tech-stack-card__mark">Js</span>
+        <div class="tech-stack-card__name">JavaScript</div>
+        <div class="tech-stack-card__category">Frontend</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:6">
+        <span class="tech-stack-card__mark">H5</span>
+        <div class="tech-stack-card__name">HTML5</div>
+        <div class="tech-stack-card__category">Frontend</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:7">
+        <span class="tech-stack-card__mark">C3</span>
+        <div class="tech-stack-card__name">CSS3</div>
+        <div class="tech-stack-card__category">Frontend</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:8">
+        <span class="tech-stack-card__mark">Bs</span>
+        <div class="tech-stack-card__name">Bootstrap</div>
+        <div class="tech-stack-card__category">Frontend Framework</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:9">
+        <span class="tech-stack-card__mark">Gt</span>
+        <div class="tech-stack-card__name">Git</div>
+        <div class="tech-stack-card__category">Version Control</div>
+      </div>
+      <div class="tech-stack-card" data-reveal style="--i:10">
+        <span class="tech-stack-card__mark">Gh</span>
+        <div class="tech-stack-card__name">GitHub</div>
+        <div class="tech-stack-card__category">Version Control</div>
+      </div>
+    </div>
+
+    <div class="marquee" data-reveal style="margin-top:56px;">
+      <div class="marquee__track">
+        <span>Java</span><span>Spring Boot</span><span>REST API</span><span>MySQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span>
+        <span>Java</span><span>Spring Boot</span><span>REST API</span><span>MySQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY WORK WITH ME ================= -->
+  <section class="why" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <h2 class="section-title">Why work with Iftikar?</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="value-card" data-reveal style="--i:0">
+        <div class="value-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 4h9l3 3v13H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="value-card__title">Clean Architecture</h3>
+        <p class="value-card__text">I focus on organized and maintainable code so applications remain easier to understand, update, and scale.</p>
+      </div>
+
+      <div class="value-card" data-reveal style="--i:1">
+        <div class="value-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="value-card__title">Practical Problem Solving</h3>
+        <p class="value-card__text">I focus on solving the actual business or user problem instead of adding unnecessary technical complexity.</p>
+      </div>
+
+      <div class="value-card" data-reveal style="--i:2">
+        <div class="value-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9M11 19V4M18 19v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="value-card__title">Full-Stack Understanding</h3>
+        <p class="value-card__text">My experience across backend, frontend, APIs, and databases helps me understand the complete application rather than only one part of it.</p>
+      </div>
+
+      <div class="value-card" data-reveal style="--i:3">
+        <div class="value-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v4M12 17v4M3 12h4M17 12h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="4.4" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h3 class="value-card__title">Long-Term Thinking</h3>
+        <p class="value-card__text">I build with future maintenance, scalability, performance, and real-world usage in mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICE CTA ================= -->
+  <section class="about-cta" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Have a Project in Mind?</p>
+      <h2 class="section-title">Let's turn your idea into something real.</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;">Whether you need a Java web application, REST API, backend system, database integration, or a complete web solution, let's discuss what you're building.</p>
+      <div class="about-cta__actions">
+        <a href="contact.html" class="btn btn--primary">Start a Conversation <span class="arrow">↗</span></a>
+        <a href="index.html#work" class="btn btn--outline">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo"><span class="nav__logo-mark">I</span> Iftikar<span class="nav__dot">.</span></p>
+      <p class="footer__role">Java Web Developer</p>
+      <p class="footer__tagline">Building reliable digital experiences with Java and modern web technologies.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#work">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer__social" id="footerSocial">
+      <!-- Rendered live from Admin Panel data by site-render.js -->
+    </div>
+  </div>
+
+  <p class="footer__copyright">© 2026 Iftikar. All Rights Reserved.</p>
+</footer>
+
+<script src="site-render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

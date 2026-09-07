@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Iftikar — Java Web Developer</title>
+<meta name="description" content="Learn about Iftikar's journey as a Java Web Developer — his story, skills, timeline, and approach to building reliable web applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="data-store.js"></script>
+</head>
+<body>
+
+<!-- ================= ATMOSPHERE BACKGROUND ================= -->
+<div class="atmosphere" aria-hidden="true">
+  <div class="blob blob--orange"></div>
+  <div class="blob blob--blue"></div>
+  <div class="blob blob--violet"></div>
+</div>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav" data-reveal-root>
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo"><span class="nav__logo-mark">I</span> Iftikar<span class="nav__dot">.</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link is-active">About</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="index.html#work" class="nav__link">Work</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn--ghost nav__cta">Let's Talk <span class="arrow">↗</span></a>
+
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= ABOUT HERO ================= -->
+  <section class="about-hero">
+    <div class="about-hero__inner">
+      <div class="about-hero__text" data-hero-el="text">
+        <p class="eyebrow" data-hero-el="eyebrow">About Iftikar</p>
+        <h1 class="about-hero__headline" data-hero-el="headline">Building more than websites. <span class="accent-text">Building solutions that work.</span></h1>
+        <p class="about-hero__lead" data-hero-el="sub" data-bind="about.heroLead">I'm Iftikar, a Java Web Developer focused on building reliable, scalable, and practical web applications. I enjoy transforming ideas and complex requirements into clean digital products that solve real problems.</p>
+      </div>
+
+      <div class="hero__visual" data-hero-el="visual">
+        <div class="portrait-frame">
+          <div class="portrait-frame__glow"></div>
+          <img src="assets/profile-placeholder.svg" alt="Portrait placeholder of Iftikar, Java Web Developer" class="portrait-frame__img" data-bind-src="profile.photo">
+        </div>
+
+        <div class="float-card float-card--top" data-editable="floating-card-1">
+          <span class="float-card__label">Primary Stack</span>
+          <span class="float-card__value">Java + Spring Boot</span>
+        </div>
+
+        <div class="float-card float-card--bottom" data-editable="floating-card-2">
+          <span class="float-card__label">Experience</span>
+          <span class="float-card__value">4+ Years, Full-Stack</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MY STORY ================= -->
+  <section class="story" data-reveal-root>
+    <div class="story__grid">
+      <div data-reveal>
+        <p class="eyebrow">My Journey</p>
+        <h2 class="section-title">From curiosity to creating real-world software.</h2>
+        <span class="story__mark" aria-hidden="true">“</span>
+      </div>
+
+      <div class="story__blocks" id="storyBlocks">
+        <!-- Rendered live from Admin Panel data by site-render.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TIMELINE ================= -->
+  <section class="timeline-section" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Professional Journey</p>
+      <h2 class="section-title">Milestones along the way.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-reveal style="--i:0">
+        <span class="timeline-item__number">Milestone 01</span>
+        <h3 class="timeline-item__title">Started Learning Programming</h3>
+        <p class="timeline-item__text">Began exploring programming fundamentals and developing an interest in how websites and software applications work.</p>
+      </div>
+      <div class="timeline-item" data-reveal style="--i:1">
+        <span class="timeline-item__number">Milestone 02</span>
+        <h3 class="timeline-item__title">Built My First Web Projects</h3>
+        <p class="timeline-item__text">Started creating practical web projects and learning how frontend interfaces, backend logic, and databases work together.</p>
+      </div>
+      <div class="timeline-item" data-reveal style="--i:2">
+        <span class="timeline-item__number">Milestone 03</span>
+        <h3 class="timeline-item__title">Started Working with Java</h3>
+        <p class="timeline-item__text">Focused on Java programming and began developing stronger skills in backend development, object-oriented programming, and application architecture.</p>
+      </div>
+      <div class="timeline-item" data-reveal style="--i:3">
+        <span class="timeline-item__number">Milestone 04</span>
+        <h3 class="timeline-item__title">Built Database-Driven Applications</h3>
+        <p class="timeline-item__text">Worked on applications involving MySQL, data management, user authentication, and real-world business workflows.</p>
+      </div>
+      <div class="timeline-item" data-reveal style="--i:4">
+        <span class="timeline-item__number">Milestone 05</span>
+        <h3 class="timeline-item__title">Expanded into Spring Boot &amp; REST APIs</h3>
+        <p class="timeline-item__text">Started building more scalable backend applications, structured REST APIs, and modern Java web solutions.</p>
+      </div>
+      <div class="timeline-item" data-reveal style="--i:5">
+        <span class="timeline-item__number">Milestone 06</span>
+        <h3 class="timeline-item__title">4+ Years of Development Experience</h3>
+        <p class="timeline-item__text">Continued building projects and improving skills across Java, Spring Boot, frontend development, APIs, databases, and complete web applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AWARDS & ACHIEVEMENTS ================= -->
+  <section class="awards" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Recognition</p>
+      <h2 class="section-title">Awards &amp; Achievements.</h2>
+    </div>
+
+    <div class="awards__grid" id="awardsGrid">
+      <!-- Rendered live from Admin Panel data by site-render.js -->
+    </div>
+  </section>
+
+  <!-- ================= APPROACH ================= -->
+  <section class="approach" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">My Approach</p>
+      <h2 class="section-title">I don't just write code. I build solutions with purpose.</h2>
+      <p class="section-sub">Good software is not only about using the right technology. It is about understanding the problem, choosing the right approach, and creating something reliable for the people who will actually use it.</p>
+    </div>
+
+    <div class="approach__grid">
+      <div class="value-card" data-reveal style="--i:0">
+        <div class="value-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="value-card__title">Understand Before Building</h3>
+        <p class="value-card__text">I focus on understanding the requirements and the real problem before choosing how to build the solution.</p>
+      </div>
+
+      <div class="value-card" data-reveal style="--i:1">
+        <div class="value-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 4h9l3 3v13H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="value-card__title">Clean &amp; Maintainable Code</h3>
+        <p class="value-card__text">I aim to write organized, understandable code that can be maintained and improved over time.</p>
+      </div>
+
+      <div class="value-card" data-reveal style="--i:2">
+        <div class="value-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9M11 19V4M18 19v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="value-card__title">Scalable Development</h3>
+        <p class="value-card__text">I consider how applications can grow, making thoughtful decisions about architecture, APIs, and data.</p>
+      </div>
+
+      <div class="value-card" data-reveal style="--i:3">
+        <div class="value-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c1.2-3.6 4-5.4 7-5.4S18.8 16.4 20 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="value-card__title">User-Focused Thinking</h3>
+        <p class="value-card__text">Even when working on backend systems, I think about the final user experience and how technology can make workflows easier.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="skills" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">What I Work With</p>
+      <h2 class="section-title">The skills behind the work.</h2>
+    </div>
+
+    <div class="skills__list">
+      <div class="skill-item" data-reveal style="--i:0">
+        <div class="skill-item__head">
+          <div>
+            <span class="skill-item__name">Java Development</span>
+            <p class="skill-item__desc">Java, object-oriented programming, application logic, and backend development.</p>
+          </div>
+          <span class="skill-item__percent">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-bar__fill" data-skill="90"></div></div>
+      </div>
+
+      <div class="skill-item" data-reveal style="--i:1">
+        <div class="skill-item__head">
+          <div>
+            <span class="skill-item__name">Spring Boot</span>
+            <p class="skill-item__desc">Building scalable Java web applications, backend services, and application architecture.</p>
+          </div>
+          <span class="skill-item__percent">88%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-bar__fill" data-skill="88"></div></div>
+      </div>
+
+      <div class="skill-item" data-reveal style="--i:2">
+        <div class="skill-item__head">
+          <div>
+            <span class="skill-item__name">REST API Development</span>
+            <p class="skill-item__desc">Designing structured, reliable, and secure APIs for applications and integrations.</p>
+          </div>
+          <span class="skill-item__percent">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-bar__fill" data-skill="90"></div></div>
+      </div>
+
+      <div class="skill-item" data-reveal style="--i:3">
+        <div class="skill-item__head">
+          <div>
+            <span class="skill-item__name">MySQL &amp; Database Design</span>
+            <p class="skill-item__desc">Database design, queries, relationships, and data-driven applications.</p>
+          </div>
+          <span class="skill-item__percent">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-bar__fill" data-skill="85"></div></div>
+      </div>
+
+      <div class="skill-item" data-reveal style="--i:4">
+        <div class="skill-item__head">
+          <div>
+            <span class="skill-item__name">Frontend Development</span>
+            <p class="skill-item__desc">HTML5, CSS3, JavaScript, Bootstrap, responsive design, and user interfaces.</p>
+          </div>
+          <span class="skill-item__percent">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-bar__fill" data-skill="85"></div></div>
+      </div>
+
+      <div class="skill-item" data-reveal style="--i:5">
+        <div class="skill-item__head">
+          <div>
+            <span class="skill-item__name">Full-Stack Web Development</span>
+            <p class="skill-item__desc">Connecting frontend interfaces, backend services, APIs, and databases into complete applications.</p>
+          </div>
+          <span class="skill-item__percent">88%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-bar__fill" data-skill="88"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TECH TOOLKIT ================= -->
+  <section class="toolkit" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <h2 class="section-title">My Development Toolkit</h2>
+    </div>
+
+    <div class="toolkit__grid">
+      <div class="toolkit-card" data-reveal style="--i:0"><span class="toolkit-card__mark">Jv</span><span class="toolkit-card__name">Java</span></div>
+      <div class="toolkit-card" data-reveal style="--i:1"><span class="toolkit-card__mark">Sb</span><span class="toolkit-card__name">Spring Boot</span></div>
+      <div class="toolkit-card" data-reveal style="--i:2"><span class="toolkit-card__mark">Mvc</span><span class="toolkit-card__name">Spring MVC</span></div>
+      <div class="toolkit-card" data-reveal style="--i:3"><span class="toolkit-card__mark">Api</span><span class="toolkit-card__name">REST API</span></div>
+      <div class="toolkit-card" data-reveal style="--i:4"><span class="toolkit-card__mark">Db</span><span class="toolkit-card__name">MySQL</span></div>
+      <div class="toolkit-card" data-reveal style="--i:5"><span class="toolkit-card__mark">Js</span><span class="toolkit-card__name">JavaScript</span></div>
+      <div class="toolkit-card" data-reveal style="--i:6"><span class="toolkit-card__mark">H5</span><span class="toolkit-card__name">HTML5</span></div>
+      <div class="toolkit-card" data-reveal style="--i:7"><span class="toolkit-card__mark">C3</span><span class="toolkit-card__name">CSS3</span></div>
+      <div class="toolkit-card" data-reveal style="--i:8"><span class="toolkit-card__mark">Bs</span><span class="toolkit-card__name">Bootstrap</span></div>
+      <div class="toolkit-card" data-reveal style="--i:9"><span class="toolkit-card__mark">Gt</span><span class="toolkit-card__name">Git</span></div>
+      <div class="toolkit-card" data-reveal style="--i:10"><span class="toolkit-card__mark">Gh</span><span class="toolkit-card__name">GitHub</span></div>
+    </div>
+  </section>
+
+  <!-- ================= PHILOSOPHY / QUOTE ================= -->
+  <section class="philosophy">
+    <div class="philosophy__glow" aria-hidden="true"></div>
+    <blockquote data-reveal>
+      <p class="philosophy__quote">"The best technology is not the most complicated. It's the technology that solves the problem well."</p>
+      <footer class="philosophy__author">— Iftikar, Java Web Developer</footer>
+    </blockquote>
+  </section>
+
+  <!-- ================= ABOUT FINAL CTA ================= -->
+  <section class="about-cta" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Let's Work Together</p>
+      <h2 class="section-title">Have an idea that needs the right technology?</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;">Whether you need a reliable backend, a complete web application, or help turning an idea into a working digital product, let's discuss how I can help.</p>
+      <a href="contact.html" class="btn btn--primary">Start a Conversation <span class="arrow">↗</span></a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo"><span class="nav__logo-mark">I</span> Iftikar<span class="nav__dot">.</span></p>
+      <p class="footer__role">Java Web Developer · Building reliable digital experiences.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#work">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer__social" id="footerSocial">
+      <!-- Rendered live from Admin Panel data by site-render.js -->
+    </div>
+  </div>
+
+  <p class="footer__copyright">© 2026 Iftikar. All Rights Reserved.</p>
+</footer>
+
+<script src="site-render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

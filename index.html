@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iftikar — Java Web Developer</title>
+<meta name="description" content="Iftikar is a Java Web Developer with 4+ years of experience building reliable, scalable web applications with Java, Spring Boot, REST APIs and modern frontend technologies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="data-store.js"></script>
+</head>
+<body>
+
+<!-- ================= ATMOSPHERE BACKGROUND ================= -->
+<div class="atmosphere" aria-hidden="true">
+  <div class="blob blob--orange"></div>
+  <div class="blob blob--blue"></div>
+  <div class="blob blob--violet"></div>
+</div>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav" data-reveal-root>
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo"><span class="nav__logo-mark">I</span> Iftikar<span class="nav__dot">.</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link is-active">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="index.html#work" class="nav__link">Work</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn--ghost nav__cta">Let's Talk <span class="arrow">↗</span></a>
+
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__text" data-hero-el="text">
+        <p class="eyebrow" data-hero-el="eyebrow" data-bind="home.eyebrow">Java Web Developer · 4+ Years Experience</p>
+        <h1 class="hero__headline" data-hero-el="headline" data-bind="home.headline">Building web experiences that work beautifully.</h1>
+        <p class="hero__sub" data-hero-el="sub" data-bind="home.sub">I build reliable, scalable, and modern web applications using Java, Spring Boot, REST APIs, databases, and modern frontend technologies.</p>
+
+        <div class="hero__actions" data-hero-el="actions">
+          <a href="#work" class="btn btn--primary" data-scroll>View My Work <span class="arrow">↗</span></a>
+          <a href="contact.html" class="btn btn--outline">Start a Project</a>
+        </div>
+
+        <div class="availability" data-hero-el="availability">
+          <span class="availability__dot"></span>
+          <span data-bind="home.availability">Available for freelance &amp; full-stack projects</span>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-hero-el="visual">
+        <div class="portrait-frame">
+          <div class="portrait-frame__glow"></div>
+          <img src="assets/profile-placeholder.svg" alt="Portrait placeholder of Iftikar, Java Web Developer" class="portrait-frame__img" data-bind-src="profile.photo">
+        </div>
+
+        <div class="float-card float-card--top">
+          <span class="float-card__label" data-bind="home.floatingCard1Label">Primary Stack</span>
+          <span class="float-card__value" data-bind="home.floatingCard1Value">Java + Spring Boot</span>
+        </div>
+
+        <div class="float-card float-card--bottom">
+          <span class="float-card__label" data-bind="home.floatingCard2Label">Project Status</span>
+          <span class="float-card__value" data-bind="home.floatingCard2Value">Clean. Scalable. Shipped.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="stats" id="stats" data-reveal-root>
+    <div class="stats__grid">
+      <div class="stat" data-reveal data-stat-index="0">
+        <span class="stat__number" data-count-to="4" data-suffix="+">0</span>
+        <span class="stat__label">Years Experience</span>
+      </div>
+      <div class="stat" data-reveal data-stat-index="1">
+        <span class="stat__number" data-count-to="50" data-suffix="+">0</span>
+        <span class="stat__label">Projects Delivered</span>
+      </div>
+      <div class="stat" data-reveal data-stat-index="2">
+        <span class="stat__number" data-count-to="30" data-suffix="+">0</span>
+        <span class="stat__label">Happy Clients</span>
+      </div>
+      <div class="stat" data-reveal data-stat-index="3">
+        <span class="stat__number" data-count-to="99" data-suffix="%">0</span>
+        <span class="stat__label">Commitment to Quality</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="services" id="services" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <h2 class="section-title">What I Build</h2>
+      <p class="section-sub">From backend architecture to polished interfaces, I build complete digital experiences designed for performance and scalability.</p>
+    </div>
+
+    <div class="services__grid" id="servicesTeaserGrid">
+      <!-- Rendered live from Admin Panel data by site-render.js -->
+    </div>
+
+    <div class="services__more" data-reveal>
+      <a href="services.html" class="btn btn--outline">View All Services <span class="arrow">↗</span></a>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT PREVIEW ================= -->
+  <section class="about-preview" id="about-preview" data-reveal-root>
+    <div class="about-preview__grid">
+      <div class="about-preview__text" data-reveal>
+        <p class="eyebrow">A Little About Me</p>
+        <h2 class="section-title">Engineering with purpose.</h2>
+        <p class="about-preview__lead" data-bind="home.aboutPreviewText">I'm Iftikar, a Java Web Developer focused on building practical, scalable, and high-quality web applications. I combine backend engineering with modern frontend development to create products that are reliable behind the scenes and intuitive for the people using them.</p>
+        <a href="about.html" class="btn btn--outline">Read My Full Story <span class="arrow">↗</span></a>
+      </div>
+
+      <div class="about-preview__highlights" data-reveal>
+        <div class="highlight">
+          <h3>Clean Architecture</h3>
+          <p>Structured and maintainable code.</p>
+        </div>
+        <div class="highlight">
+          <h3>Performance Focused</h3>
+          <p>Fast, efficient and scalable applications.</p>
+        </div>
+        <div class="highlight">
+          <h3>Business-Oriented</h3>
+          <p>Technology built around real-world problems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED WORK ================= -->
+  <section class="work" id="work" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-sub">A selection of applications and systems I've worked on.</p>
+    </div>
+
+    <div class="work__grid" id="workGrid">
+      <!-- Rendered live from Admin Panel data by site-render.js -->
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="testimonials" id="testimonials" data-reveal-root>
+    <div class="section-head" data-reveal>
+      <h2 class="section-title">What clients say</h2>
+    </div>
+
+    <div class="testimonial-slider" data-reveal>
+      <div class="testimonial-track" id="testimonialTrack">
+        <blockquote class="testimonial">
+          <p>“Iftikar understood exactly what we needed and delivered a clean, reliable application that was easy to use and maintain.”</p>
+          <footer>Client / Business Owner <span class="testimonial__demo">(sample testimonial)</span></footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“His attention to detail and ability to solve technical problems made the entire development process smooth.”</p>
+          <footer>Client / Project Manager <span class="testimonial__demo">(sample testimonial)</span></footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“Professional communication, strong development skills, and excellent attention to quality.”</p>
+          <footer>Client / Startup Founder <span class="testimonial__demo">(sample testimonial)</span></footer>
+        </blockquote>
+      </div>
+
+      <div class="testimonial-controls">
+        <button class="testimonial-btn" id="testimonialPrev" aria-label="Previous testimonial">←</button>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+        <button class="testimonial-btn" id="testimonialNext" aria-label="Next testimonial">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TECH MARQUEE ================= -->
+  <section class="marquee-section" id="tech" data-reveal-root>
+    <p class="section-sub section-sub--center" data-reveal>Technologies I Work With</p>
+    <div class="marquee" data-reveal>
+      <div class="marquee__track">
+        <span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>REST API</span><span>MySQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Git</span>
+        <span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>REST API</span><span>MySQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT TEASER ================= -->
+  <section class="contact-teaser" data-reveal-root>
+    <div class="contact-teaser__inner" data-reveal>
+      <h2 class="section-title">Let's build something worth remembering.</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;">Have an idea, product, or project in mind? Let's turn it into a reliable digital experience.</p>
+      <div class="contact-teaser__actions">
+        <a href="contact.html" class="btn btn--primary">Start a Conversation <span class="arrow">↗</span></a>
+        <a href="mailto:iftikarrahmancnpi@gmail.com" class="contact__email" data-editable="contact-email">iftikarrahmancnpi@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo"><span class="nav__logo-mark">I</span> Iftikar<span class="nav__dot">.</span></p>
+      <p class="footer__role">Java Web Developer</p>
+      <p class="footer__tagline">Building reliable digital experiences with Java and modern web technologies.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#work">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer__social" id="footerSocial">
+      <!-- Rendered live from Admin Panel data by site-render.js -->
+    </div>
+  </div>
+
+  <p class="footer__copyright">© 2026 Iftikar. All Rights Reserved.</p>
+</footer>
+
+<!-- ================= PROJECT MODAL ================= -->
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__panel">
+    <button class="modal__close" data-modal-close aria-label="Close project details">✕</button>
+    <img class="modal__image" id="modalImage" src="" alt="">
+    <div class="modal__body">
+      <span class="modal__number" id="modalNumber"></span>
+      <h3 class="modal__title" id="modalTitle"></h3>
+
+      <div class="modal__section">
+        <h4>Overview</h4>
+        <p id="modalOverview"></p>
+      </div>
+      <div class="modal__section">
+        <h4>Problem</h4>
+        <p id="modalProblem"></p>
+      </div>
+      <div class="modal__section">
+        <h4>Solution</h4>
+        <p id="modalSolution"></p>
+      </div>
+      <div class="modal__section">
+        <h4>Technologies Used</h4>
+        <p id="modalTech"></p>
+      </div>
+      <div class="modal__section">
+        <h4>Main Features</h4>
+        <ul id="modalFeatures"></ul>
+      </div>
+      <div class="modal__section">
+        <h4>Development Approach</h4>
+        <p id="modalApproach"></p>
+      </div>
+
+      <div class="modal__actions">
+        <a href="#" class="btn btn--outline" id="modalGithub" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" class="btn btn--primary" id="modalDemo" target="_blank" rel="noopener">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="site-render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
