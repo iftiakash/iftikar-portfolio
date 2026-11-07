@@ -34,7 +34,7 @@
     theme: 'charcoal-orange',
 
     profile: {
-      photo: 'photo/profile.JPG'
+      photo: 'photo/profile.jpg'
     },
 
     home: {
