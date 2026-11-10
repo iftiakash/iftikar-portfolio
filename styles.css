@@ -343,9 +343,9 @@ section{
 
 .portrait-frame{
   position: relative;
-  width: min(420px, 90%);
-  aspect-ratio: 5/6;
-  border-radius: 32px 32px 32px 90px;
+ width: min(400px, 90%);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   overflow: hidden;
   border: 1px solid var(--border-soft);
   box-shadow: var(--shadow-card);
