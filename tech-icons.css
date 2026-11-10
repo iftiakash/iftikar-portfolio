@@ -1,0 +1,19 @@
+/* tech-icons.css — real logos for the Toolkit cards on services.html */
+.tech-stack-card__mark{
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: #eef1f6;              /* light tile so every logo is easy to see */
+  border: 0;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.tech-icon{
+  width: 30px; height: 30px;
+  object-fit: contain;
+  display: block;
+}
+.tech-stack-card:hover .tech-stack-card__mark{
+  transform: scale(1.1) rotate(-4deg);
+  box-shadow: 0 10px 24px rgba(47,184,255,.28);
+}
