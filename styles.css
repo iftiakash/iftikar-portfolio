@@ -341,34 +341,21 @@ section{
 
 .hero__visual{ position: relative; display: flex; justify-content: center; }
 
+.hero__visual{
+  position: relative;
+  width: min(400px, 90%);
+  margin: 0 auto;
+}
+
 .portrait-frame{
   position: relative;
- width: min(400px, 90%);
+  width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid var(--border-soft);
   box-shadow: var(--shadow-card);
 }
-.portrait-frame__img{
-  width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: center 22%;
-  clip-path: inset(0 100% 0 0);
-  animation: wipeIn 1.3s .5s var(--ease) forwards;
-}
-@keyframes wipeIn{ to{ clip-path: inset(0 0 0 0); } }
-
-.portrait-frame__glow{
-  position: absolute;
-  inset: -30%;
-  background:
-    radial-gradient(circle at 15% 15%, rgba(255,122,41,.5), transparent 45%),
-    radial-gradient(circle at 90% 85%, rgba(47,184,255,.4), transparent 45%);
-  filter: blur(50px);
-  z-index: -1;
-}
-
 .float-card{
   position: absolute;
   display: flex;
