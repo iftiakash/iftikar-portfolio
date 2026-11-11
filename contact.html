@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Iftikar, Web Developer</title>
-<meta name="description" content="Get in touch with Iftikar for Java web development, Spring Boot, REST API, backend, database, and full-stack projects.">
+<title>Contact — Iftikar, Backend Developer</title>
+<meta name="description" content="Contact Iftikar about backend development work, projects, or academic opportunities.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -45,10 +45,9 @@
 
   <!-- ================= CONTACT HERO ================= -->
   <section class="services-hero">
-    <p class="eyebrow services-hero__eyebrow" data-hero-el="eyebrow">Let's Talk</p>
-    <h1 class="services-hero__headline" data-hero-el="headline">Have a <span class="accent-text">project</span> in mind?</h1>
-    <p class="services-hero__lead" data-hero-el="sub">Whether you're building a new web application, improving an existing system, or need a reliable backend solution, let's talk about how I can help.</p>
-    <p class="services-hero__lead" data-hero-el="actions" style="margin-top:-16px; font-size:.95rem;">I'm available for Java web development, Spring Boot, REST API, backend, database, and full-stack projects.</p>
+    <p class="eyebrow services-hero__eyebrow" data-hero-el="eyebrow">Contact</p>
+    <h1 class="services-hero__headline" data-hero-el="headline">Let's <span class="accent-text">talk</span>.</h1>
+    <p class="services-hero__lead" data-hero-el="sub">Send me a message about a job, a project, or an academic opportunity. I will reply as soon as I can.</p>
   </section>
 
   <!-- ================= CONTACT INFO + FORM ================= -->
@@ -56,8 +55,8 @@
     <div class="contact__inner">
 
       <div class="contact__text" data-reveal>
-        <h2 class="section-title">Let's start a conversation.</h2>
-        <p class="section-sub">Tell me a little about what you're building, what problem you're trying to solve, and what you'd like to achieve. I'll review your message and get back to you as soon as possible.</p>
+        <h2 class="section-title">Send me a message.</h2>
+        <p class="section-sub">Tell me who you are and what you would like to talk about. You can also email or message me directly.</p>
 
         <div class="contact-info__list" id="contactInfoList">
           <!-- Rendered live from Admin Panel data by site-render.js -->
@@ -65,12 +64,29 @@
       </div>
 
       <div data-reveal>
-        <p class="section-sub" style="margin-bottom: 18px;">Have a Java web development project, application, API, or business system in mind? Send me the details and let's discuss it.</p>
-        <div class="contact-form" id="whatsappCard">
-          <h3 class="section-title" style="font-size:1.3rem; margin-bottom: 4px;">Tell me about your project.</h3>
-          <p class="section-sub" style="margin-bottom: 20px;">The fastest way to reach me — message me directly on WhatsApp and I'll get back to you as soon as possible.</p>
-          <a href="#" id="whatsappCta" class="btn btn--primary" target="_blank" rel="noopener" style="width:100%; justify-content:center; display:inline-flex;">Message Me on WhatsApp <span class="arrow">↗</span></a>
-        </div>
+        <!-- IMPORTANT: replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="form-row">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-row">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-row">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+            <span class="form-error"></span>
+          </div>
+          <button type="submit" class="btn btn--primary form-submit">Send Message <span class="arrow">↗</span></button>
+          <p class="form-success" id="formSuccess">Thank you. Your message was sent.</p>
+          <p class="form-error" id="formFail"></p>
+
+          <a href="#" id="whatsappCta" class="btn btn--outline" target="_blank" rel="noopener" style="justify-content:center;">Message Me on WhatsApp <span class="arrow">↗</span></a>
+        </form>
       </div>
 
     </div>
@@ -85,18 +101,18 @@
     <div class="next-steps__grid">
       <div class="next-step" data-reveal style="--i:0">
         <span class="next-step__number">01</span>
-        <h3 class="next-step__title">You Reach Out</h3>
-        <p class="next-step__text">Send me your project details, goals, requirements, and approximate timeline.</p>
+        <h3 class="next-step__title">You Send a Message</h3>
+        <p class="next-step__text">Tell me who you are and what you would like to talk about.</p>
       </div>
       <div class="next-step" data-reveal style="--i:1">
         <span class="next-step__number">02</span>
-        <h3 class="next-step__title">We Discuss</h3>
-        <p class="next-step__text">I'll review your requirements and we can discuss the technical approach, scope, timeline, and budget.</p>
+        <h3 class="next-step__title">I Reply</h3>
+        <p class="next-step__text">I read your message and reply as soon as I can.</p>
       </div>
       <div class="next-step" data-reveal style="--i:2">
         <span class="next-step__number">03</span>
-        <h3 class="next-step__title">We Build</h3>
-        <p class="next-step__text">Once everything is agreed, we can move forward and turn your idea into a reliable digital solution.</p>
+        <h3 class="next-step__title">We Talk</h3>
+        <p class="next-step__text">We agree on the next step, by email, a call, or a meeting.</p>
       </div>
     </div>
   </section>
@@ -104,12 +120,11 @@
   <!-- ================= FINAL CTA ================= -->
   <section class="about-cta" data-reveal-root>
     <div class="section-head" data-reveal>
-      <p class="eyebrow">Ready to Build?</p>
-      <h2 class="section-title">Let's turn your idea into working software.</h2>
-      <p class="section-sub" style="margin-left:auto;margin-right:auto;">Good projects start with a conversation. Tell me what you're building and let's figure out the best way to make it happen.</p>
+      <p class="eyebrow">See My Work</p>
+      <h2 class="section-title">Want to see what I have built?</h2>
       <div class="about-cta__actions">
-        <a href="#whatsappCard" class="btn btn--primary" data-scroll>Message Me on WhatsApp <span class="arrow">↗</span></a>
-        <a href="index.html#work" class="btn btn--outline">View My Work</a>
+        <a href="index.html#work" class="btn btn--primary">View My Projects <span class="arrow">↗</span></a>
+        <a href="about.html" class="btn btn--outline">About Me</a>
       </div>
     </div>
   </section>
@@ -121,8 +136,8 @@
   <div class="footer__inner">
     <div class="footer__brand">
       <p class="footer__logo"><span class="nav__logo-mark">I</span> Iftikar<span class="nav__dot">.</span></p>
-      <p class="footer__role">Java Web Developer</p>
-      <p class="footer__tagline">Building reliable digital experiences with Java and modern web technologies.</p>
+      <p class="footer__role">Backend Developer</p>
+      <p class="footer__tagline">Building reliable applications with Java and TypeScript.</p>
     </div>
 
     <nav class="footer__nav" aria-label="Footer navigation">
@@ -143,5 +158,53 @@
 
 <script src="site-render.js"></script>
 <script src="script.js"></script>
+<script>
+/* Contact form: validate, then send with fetch to Formspree */
+(function () {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  var success = document.getElementById('formSuccess');
+  var fail = document.getElementById('formFail');
+  var btn = form.querySelector('.form-submit');
+
+  function setError(input, msg) {
+    var row = input.closest('.form-row');
+    row.classList.toggle('has-error', !!msg);
+    row.querySelector('.form-error').textContent = msg || '';
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    success.classList.remove('is-visible');
+    fail.textContent = '';
+
+    var name = form.elements.name, email = form.elements.email, message = form.elements.message;
+    var ok = true;
+    setError(name, name.value.trim() ? '' : 'Please enter your name.');
+    setError(email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value) ? '' : 'Please enter a valid email.');
+    setError(message, message.value.trim().length >= 10 ? '' : 'Please write at least 10 characters.');
+    if (!name.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value) || message.value.trim().length < 10) ok = false;
+    if (!ok) return;
+
+    btn.classList.add('is-loading');
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    }).then(function (res) {
+      if (res.ok) {
+        form.reset();
+        success.classList.add('is-visible');
+      } else {
+        fail.textContent = 'Could not send. Please email me directly.';
+      }
+    }).catch(function () {
+      fail.textContent = 'Network error. Please email me directly.';
+    }).then(function () {
+      btn.classList.remove('is-loading');
+    });
+  });
+})();
+</script>
 </body>
 </html>

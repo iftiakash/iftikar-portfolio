@@ -28,7 +28,7 @@
   var CREDS_KEY = 'iftikarAdminCreds';
 
   /* ---------------------------------------------------------
-     DEFAULT CONTENT — mirrors what's already on the site
+     DEFAULT CONTENT
   --------------------------------------------------------- */
   var DEFAULT_DATA = {
     theme: 'charcoal-orange',
@@ -38,59 +38,55 @@
     },
 
     home: {
-      eyebrow: "Java Web Developer · 4+ Years Experience",
+      eyebrow: "Backend Developer · 4+ Years Experience",
       headline: "Building web experiences that work beautifully.",
-      sub: "I build reliable, scalable, and modern web applications using Java, Spring Boot, REST APIs, databases, and modern frontend technologies.",
-      availability: "Available for freelance & full-stack projects",
+      sub: "I am a Computer Science and Engineering graduate. I build reliable web applications and APIs with Java, TypeScript, and databases.",
+      availability: "Open to Master's study in Europe",
       floatingCard1Label: "Primary Stack",
       floatingCard1Value: "Java + Spring Boot",
-      floatingCard2Label: "Project Status",
-      floatingCard2Value: "Clean. Scalable. Shipped.",
+      floatingCard2Label: "Degree",
+      floatingCard2Value: "B.Sc. in CSE",
       stats: [
         { value: 4, suffix: '+', label: 'Years Experience' },
-        { value: 50, suffix: '+', label: 'Projects Delivered' },
-        { value: 30, suffix: '+', label: 'Happy Clients' },
-        { value: 99, suffix: '%', label: 'Commitment to Quality' }
+        { value: 3, suffix: '+', label: 'Projects Built' },
+        { value: 1, suffix: '', label: "Bachelor's Degree in CSE" },
+        { value: 10, suffix: '+', label: 'Technologies Used' }
       ],
-      aboutPreviewText: "I'm Iftikar, a Java Web Developer focused on building practical, scalable, and high-quality web applications. I combine backend engineering with modern frontend development to create products that are reliable behind the scenes and intuitive for the people using them."
+      aboutPreviewText: "I am Iftikar, a backend developer from Bangladesh. Since December 2024 I work at Dhaka Post, where I build NestJS and TypeScript microservices with PostgreSQL, Redis, and Docker. I also build Java applications. I want to study for a Master's degree in Computer Science and bring my skills back to my country."
     },
 
     about: {
-      heroLead: "I'm Iftikar, a Java Web Developer focused on building reliable, scalable, and practical web applications. I enjoy transforming ideas and complex requirements into clean digital products that solve real problems.",
-      story: "My journey into web development began with curiosity about how websites and software actually work behind the scenes. What started as an interest in programming gradually became a passion for building complete digital products.\n\nOver time, I developed my skills across Java, backend development, databases, APIs, and frontend technologies. I became especially interested in the challenge of taking an idea or business requirement and turning it into a structured, functional application.\n\nToday, I focus on building reliable web applications using Java and Spring Boot, designing REST APIs, working with databases, and creating responsive user interfaces. I enjoy solving problems, improving systems, and writing code that is clean enough to be maintained and scalable enough to grow.\n\nWhat makes me different is that I do not focus only on writing code. I try to understand the problem first, then build a practical solution around the real needs of users and businesses. My goal is to turn complex requirements into software that feels simple, useful, and reliable."
+      heroLead: "I am Iftikar, a backend developer with a Bachelor's degree in Computer Science and Engineering. I build reliable web applications and APIs, and I want to keep growing through a Master's degree.",
+      story: "I started programming because I wanted to understand how software works behind the screen. Over time this became my career. I have worked as a developer for almost four years, mostly with Java.\n\nSince December 2024 I work as a Backend Developer at Dhaka Post, part of the US-Bangla Group. There I build microservices with NestJS and TypeScript. I work with PostgreSQL, Redis caching, Docker, and JWT with role-based access control.\n\nOutside work I built my own projects: idalbd.com, a learning platform, a university management assistant app, and a web-based POS system. Building them taught me how to take an idea and turn it into a working product.\n\nMy goal is to work in the tech industry as a Java developer and to use what I learn to contribute to my home country. A Master's degree in Computer Science is my next step."
     },
 
     services: [
       {
         id: 'svc-1',
-        title: 'Java Web Development',
-        price: 'From $800',
-        description: 'Custom web applications built with Java and Spring Boot, focusing on clean architecture, maintainability, performance, and long-term scalability.',
-        features: ['Java application development', 'Spring Boot applications', 'Spring MVC', 'Business logic implementation', 'Scalable backend architecture'],
+        title: 'Java Backend Development',
+        description: 'Web applications built with Java and Spring Boot, with a focus on clean and maintainable code.',
+        features: ['Java application development', 'Spring Boot', 'Spring MVC', 'Business logic', 'Layered architecture'],
         icon: 'java'
       },
       {
         id: 'svc-2',
-        title: 'REST API Development',
-        price: 'From $600',
-        description: 'Reliable and structured REST APIs that allow web applications, mobile applications, databases, and external services to communicate efficiently.',
-        features: ['RESTful API architecture', 'CRUD operations', 'Authentication & authorization', 'API integration', 'JSON-based communication', 'Error handling & validation'],
+        title: 'Microservices & APIs',
+        description: 'REST APIs and microservices with NestJS and TypeScript, secured with JWT and role-based access control.',
+        features: ['NestJS and TypeScript', 'RESTful API design', 'JWT authentication', 'Role-based access control', 'Validation and error handling'],
         icon: 'api'
       },
       {
         id: 'svc-3',
-        title: 'Database & Backend Integration',
-        price: 'From $500',
-        description: 'Structured backend systems connected with reliable database architecture for applications that need secure, organized, and efficient data management.',
-        features: ['MySQL', 'Database design', 'CRUD operations', 'Data relationships', 'Query optimization', 'Backend/database integration'],
+        title: 'Databases & Caching',
+        description: 'Database design and caching to keep applications organized and fast.',
+        features: ['PostgreSQL', 'MySQL', 'Redis caching', 'Database design', 'Query optimization'],
         icon: 'database'
       },
       {
         id: 'svc-4',
-        title: 'Frontend Development',
-        price: 'From $450',
-        description: 'Responsive and modern web interfaces that connect seamlessly with backend systems and provide users with a clean, intuitive experience.',
-        features: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Responsive design', 'API integration'],
+        title: 'Frontend Basics',
+        description: 'Simple, responsive interfaces that connect to backend systems.',
+        features: ['HTML5', 'CSS3', 'JavaScript', 'Responsive design', 'API integration'],
         icon: 'frontend'
       }
     ],
@@ -99,81 +95,51 @@
       {
         id: 'proj-1',
         number: '01',
-        title: 'Business Management Platform',
-        tags: 'Java · Spring Boot · MySQL · JavaScript',
+        title: 'idalbd.com',
+        tags: 'Learning Platform · Web Application',
         image: 'photo/project1.jpg',
-        description: 'A complete business management platform designed to manage customers, employees, products, inventory, orders, and operational workflows.',
-        overview: 'A complete business management platform designed to manage customers, employees, products, inventory, orders, and operational workflows from a single dashboard.',
-        problem: 'The business relied on disconnected spreadsheets and manual processes to track customers, stock, and orders, leading to errors and slow reporting.',
-        solution: 'Built a centralized Java and Spring Boot application backed by MySQL, giving staff a single reliable source of truth with role-based access and real-time updates.',
-        features: ['Customer and employee management modules', 'Live inventory and stock tracking', 'Order processing with status workflows', 'Role-based dashboards and permissions', 'Exportable reports for operations and finance'],
-        approach: 'Developed using a layered Spring Boot architecture (controller, service, repository) with clean separation of concerns, unit-tested business logic, and an iterative delivery process based on stakeholder feedback.',
+        description: 'A web-based learning platform.',
+        overview: 'idalbd.com is a web-based learning platform that I built.',
+        problem: 'Learners need one place to find and follow learning content online.',
+        solution: 'I built a web platform that brings learning content together in one place.',
+        features: ['Add your real features here'],
+        approach: 'Add a short note on how you built it.',
         github: '#',
-        demo: '#'
+        demo: 'https://idalbd.com'
       },
       {
         id: 'proj-2',
         number: '02',
-        title: 'Scalable API Architecture',
-        tags: 'Java · Spring Boot · REST API · MySQL',
+        title: 'University Management Assistant',
+        tags: 'Application · Education',
         image: 'photo/project2.png',
-        description: 'A structured REST API architecture designed for secure communication between frontend applications, databases, and external services.',
-        overview: 'A structured REST API architecture designed for secure communication between frontend applications, databases, and external services.',
-        problem: 'Multiple client applications needed consistent, secure access to shared business data without duplicating logic across each frontend.',
-        solution: 'Designed a versioned REST API layer with centralized authentication, validation, and error handling, so every client consumes the same reliable contract.',
-        features: ['Token-based authentication and authorization', 'Versioned, documented REST endpoints', 'Centralized request validation and error handling', 'Database access layer optimized for performance', 'Structured logging for monitoring and debugging'],
-        approach: 'Applied clean architecture principles to keep business logic independent from delivery mechanisms, with automated tests covering core endpoints before integration.',
+        description: 'An app that helps manage university-related tasks and information.',
+        overview: 'An application that helps manage university-related tasks and information.',
+        problem: 'University information and tasks are often spread across many places.',
+        solution: 'I built an assistant app that keeps this information in one place.',
+        features: ['Add your real features here'],
+        approach: 'Add a short note on how you built it.',
         github: '#',
         demo: '#'
       },
       {
         id: 'proj-3',
         number: '03',
-        title: 'Modern Commerce Experience',
-        tags: 'Java · Spring Boot · MySQL · JavaScript',
+        title: 'Web-Based POS System',
+        tags: 'Point of Sale · Web Application',
         image: 'photo/project3.webp',
-        description: 'A responsive commerce application combining product management, order processing, customer workflows, and database integration.',
-        overview: 'A responsive commerce application combining product management, order processing, customer workflows, and database integration.',
-        problem: 'The client needed an online storefront that felt fast and modern while staying easy to manage on the backend as the catalog grew.',
-        solution: 'Delivered a Spring Boot backend with a MySQL data layer paired with a responsive JavaScript frontend, covering the full path from browsing to checkout.',
-        features: ['Product catalog with search and filtering', 'Cart and checkout workflow', 'Order history and customer accounts', 'Admin-side product and inventory management', 'Responsive layout across devices'],
-        approach: 'Built iteratively, starting from the data model outward, with performance testing on catalog queries and a mobile-first frontend pass.',
-        github: '#',
-        demo: '#'
-      },
-      {
-        id: 'proj-4',
-        number: '04',
-        title: 'Developer Productivity Tool',
-        tags: 'Java · Spring Boot · JavaScript · MySQL',
-        image: 'photo/project4.jfif',
-        description: 'A web-based productivity solution designed to simplify repetitive workflows and provide users with a clean and efficient experience.',
-        overview: 'A web-based productivity solution designed to simplify repetitive workflows and provide users with a clean and efficient experience.',
-        problem: 'Team members were losing time to repetitive manual task tracking spread across disconnected tools and spreadsheets.',
-        solution: 'Built a lightweight task and workflow board backed by Java and MySQL, letting teams track progress in one place with minimal setup.',
-        features: ['Drag-and-drop task boards', 'Sprint and progress tracking', 'Team assignment and activity history', 'Lightweight REST API for integrations', 'Clean, distraction-free interface'],
-        approach: 'Prioritized a minimal, fast interface first, then layered backend features incrementally based on real usage patterns from early testers.',
+        description: 'A web-based point of sale system for handling sales.',
+        overview: 'A web-based point of sale (POS) system for handling sales.',
+        problem: 'Small shops need a simple way to record sales and manage products.',
+        solution: 'I built a web POS system that records sales and manages products.',
+        features: ['Add your real features here'],
+        approach: 'Add a short note on how you built it.',
         github: '#',
         demo: '#'
       }
     ],
 
-    awards: [
-      {
-        id: 'award-1',
-        title: 'Certified Java Developer',
-        issuer: 'Oracle',
-        year: '2023',
-        description: 'Professional certification validating core Java and object-oriented programming expertise.'
-      },
-      {
-        id: 'award-2',
-        title: 'Top Rated Freelance Developer',
-        issuer: 'Freelance Platform',
-        year: '2024',
-        description: 'Recognized for consistently delivering reliable Java and Spring Boot projects on time.'
-      }
-    ],
+    awards: [],
 
     contact: {
       email: 'iftikarrahmancnpi@gmail.com',
